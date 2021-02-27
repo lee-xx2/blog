@@ -1,0 +1,1 @@
+"use strict";function format(t,e){e=e||"-";var r=t.getFullYear(),g=t.getMonth()+1;g=10<=g?g:"0"+g;var n=t.getDate();return""+r+e+g+e+(n=10<=n?n:"0"+n)+" "+t.getHours()+":"+t.getMinutes()+":"+t.getSeconds()}

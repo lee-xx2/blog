@@ -1,0 +1,15 @@
+.box .regist_box{
+  height: 440px;
+  p{
+    position: relative;
+    label{
+      position: absolute;
+      left: 120px;
+      bottom: -15px;
+      color: rgb(224, 63, 13);
+    }
+    .register{
+      margin-top: 0px;
+    }
+  }
+}
