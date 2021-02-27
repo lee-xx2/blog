@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册页面</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../image/favion.ico">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/register.min.css">
+  <script src="../iconfont/iconfont.js"></script>
+  <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+  <style>
+    .icon {
+      width: 1.5em;
+      height: 1.5em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+  <div class="box">
+    <div class="login_box regist_box">
+        <h3>
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-lu"></use>
+          </svg>
+          &nbsp;我的小站
+        </h3>
+          <form class="regist login" id="regist">
+            <p>
+              <input type="text" name="username" class="username" placeholder="请输入用户名">
+            </p>
+            <p>
+              <input type="text" name="accound" class="accound" placeholder="请输入你的邮箱">
+            </p>
+            <p>
+              <input type="password" name="psw" id='psw' class="psw" placeholder="请输入你的密码">
+            </p>
+            <p>
+              <input type="password" name="psw2" class="psw2" placeholder="再次确认你的密码">
+            </p>
+            <p>
+              <input class="submit" type="submit" value="注册">
+              <a class="login register">登录</button>
+            </p>
+          </form>
+    
+    </div>
+  </div>
+  <script src="../js/fairyDustCursor.js"></script>
+  <script src="../js/register.js"></script>
+</body>
+</html>

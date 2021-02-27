@@ -1,0 +1,312 @@
+$bgtxt-color:rgba(235, 228, 228, 0.6);
+html,body{
+  height: 100%;
+  overflow: hidden;
+}
+.box1 {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+.main{
+  height: 500px;
+  background: $bgtxt-color;
+  margin: 70px;
+  position: relative;
+  border-radius: 20px 0px 0px 100px;
+  box-shadow: 0px 0px 6px 1px #DDD04D;
+  .nav_con{
+    height: 90px;
+    display: flex;
+    position: relative;
+    .type{
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      background: chocolate;
+      color: #B55E11;
+      margin: 15px 8px;
+      position: relative;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-weight: 900;
+      cursor: pointer;
+     
+      .sm_bar{
+        position: absolute;
+        right:-20px;
+        top: 24px;
+        display: block;
+        border-bottom: 3px solid chocolate;
+        width: 20px;
+      }
+    }
+    .type:nth-of-type(1){
+      background: #DFD051;
+      animation: typebtn 5s infinite;
+    }
+    .type:nth-of-type(2){
+      background: #D9A748;
+      animation: typebtn 5s 1s infinite;
+    }
+    .type:nth-of-type(3){
+      background: #E6E299;
+      animation: typebtn 5s 2s infinite;
+    }
+    .type:nth-of-type(4){
+      background: #B2C9AC;
+      animation: typebtn 5s 3s infinite;
+    }
+    .type:nth-of-type(5){
+      background: #232B6A;
+      animation: typebtn 5s 4s infinite;
+    }
+    .type:hover{
+      background: #B55E11;
+      color: #DDD04D;
+    }
+    .active{
+      background: #B55E11!important;
+      color: #DDD04D;
+      transform: scale(1.2);
+    }
+    
+  }
+  .wirte_new{
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    input{
+      border: none;
+      height: 25px;
+      width: 80px;
+      margin: 8px 0px;
+      padding: 0px 10px;
+      border-radius: 10px;
+      background: rgba(243, 238, 238, 0.6);
+      &:hover{
+        box-shadow: 0px 0px 5px 0px blue;
+      }
+    }
+    .record_new{
+      display: inline-block;
+      width: 50px;
+      height: 25px;
+      line-height: 26px;
+      background: rgba(227, 230, 97, 0.5);
+      text-align: center;
+      border-radius: 20px;
+      font-size: 16px;
+      color: #B55E11;
+      cursor: pointer;
+      &:hover{
+        box-shadow: 0px 0px 6px 0px rgb(235, 168, 25);
+      }
+    }
+  }
+  .tip{
+    position: absolute;
+    left: 400px;
+    top: 80px;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(78,102,178,0.2);
+    border-radius: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    box-shadow: 0px 0px 4px 1px #fff;
+    display: none;
+  }
+  .diary{
+    position: relative;
+    height: 70%;
+    overflow-y: auto;
+    padding: 18px 0px;
+    .new{
+      border-radius: 10px;
+      position: relative;
+      width: 550px;
+      margin: 0 auto;
+      .type_new{
+        margin-bottom:20px;
+        font-size: 16px;
+        color: #232B6A;
+        input{
+          margin:0px 10px;
+          border: none;
+          cursor: pointer;
+        }
+        label{
+          cursor: pointer;
+        }
+      }
+      .msg{
+        animation: diarycon 3s infinite alternate;  
+        width: 100%;
+        height: 240px;
+        font-size: 16px;
+        border-radius: 20px;
+        resize: none;
+        padding: 20px;
+        background: $bgtxt-color;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+      }
+      .btn{
+        box-shadow: 0px 0px 3px 1px #f3b407; 
+        background:#DFD051;
+        border: none;
+        border-radius: 50%;
+        padding: 15px 10px;
+        margin-top: 10px;
+        color: #B55E11;
+        font-weight: bold;
+        position: absolute;
+        right: -20px;
+        bottom: -10px;
+        cursor: pointer;
+        outline: none;
+        &:hover{
+          background: #e27611;
+          color:#f3e307;
+        }
+      }
+    }
+    .item-diary{
+      width: 550px;
+      overflow:none;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 40px auto;
+      display: none;
+      .box{
+        animation: diarycon 3s infinite alternate;
+        min-height: 130px;
+        background: $bgtxt-color;
+        border-radius: 10px;
+        position: relative;
+        .bar{
+          position: absolute;
+          top: -28px;
+          left: -43px;
+          height: 75%;
+          width: 0px;
+          border-right: 1.5px solid rgba(60,68,118, 0.5);
+          .star{
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #e27611;
+            position: absolute;
+            left: -4px;
+          }
+          .end{
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgb(217,206,104);
+            position: absolute;
+            left: -4px;
+            bottom: 0px;
+          }
+        }
+        .arrow{
+          display: block;
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-right: 18px solid $bgtxt-color;
+          border-bottom: 10px solid transparent;
+          position: absolute;
+          left: -18px;
+          top: 8px;
+          
+        }
+        .nickname{
+          padding-left: 10px;
+          line-height: 38px;
+          height: 35px;
+          font-size: 18px;
+          border-bottom: 1px solid rgba(60,68,118, 0.5);
+          color: #B55E11;
+          font-family: "Times New Roman", Times, serif;
+        }
+        img{
+          width: 42px;
+          height: 42px;
+          border-radius: 50%;
+          position: absolute;
+          left: -63px;
+          top: -2px;
+        }
+        .con{
+          padding: 15px 25px 30px 25px;
+          font-size: 15px;
+          text-indent : 20px;
+          line-height: 20px;
+          letter-spacing:3px;
+          font-family: "Comic Sans MS", cursive, sans-serif;
+          color: #000;
+        }
+        .date{
+         
+          position: absolute;
+          right: 25px;
+          bottom: 5px;
+          font-size: 12px;
+          line-height: 20px;
+          color:rgba(60,68,118, 0.6);
+        }
+      }
+    }
+  }
+  .diary::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 10px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    // height: 1px;
+  }
+  .diary::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    // border-radius: 5px;
+    // -webkit-box-shadow: inset 0 0 5px rgba(202, 161, 25, 0.2);
+    background: rgba(69, 78, 138, 0.5);
+  }
+  .diary::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    border-radius: 10px;
+    background:  $bgtxt-color;
+  }
+
+}
+
+
+@keyframes typebtn
+{
+  0% {box-shadow:0px 0px 6px 1px rgb(216, 216, 198);}
+  25% {box-shadow:0px 0px 10px 1px rgb(221, 220, 174);}
+  50% {box-shadow:0px 0px 12px 1px rgb(214, 211, 40);}
+  75% {box-shadow:0px 0px 10px 1px rgb(214, 211, 45);}
+  100% {box-shadow:0px 0px 6px 1px rgb(221, 220, 174);}
+}
+
+@keyframes diarycon
+{
+    0% {box-shadow:0px 0px 6px 1px rgb(216, 216, 198);}
+    25% {box-shadow:0px 0px 10px 1px rgb(221, 220, 174);}
+    50% {box-shadow:0px 0px 12px 1px rgb(214, 211, 40);}
+    75% {box-shadow:0px 0px 10px 1px rgb(214, 211, 45);}
+    100% {box-shadow:0px 0px 6px 1px rgb(221, 220, 174);}    
+}

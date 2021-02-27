@@ -1,0 +1,106 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-image: url(../image/fg4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px -220px;
+  position: relative;
+  font-family: "microsoft yahei", Verdana, Arial, 微软雅黑;
+  overflow: hidden;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.box .login_box {
+  width: 500px;
+  height: 300px;
+  background-color: rgba(89, 121, 160, 0.7);
+  margin: 200px auto;
+  border-radius: 20px;
+  transition: box-shadow 0.6s,background-color 0.6s;
+}
+
+.box .login_box:hover {
+  background-color: rgba(202, 203, 204, 0.7);
+  box-shadow: 0px 0px 6px 2px royalblue,0px 0px 6px 2px #396E97 inset;
+}
+
+.box .login_box h3 {
+  padding-top: 15px;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 180px;
+  color: #e9e63c;
+}
+
+.box .login_box:hover h3 {
+  color: #242e38;
+}
+
+.box .login_box .login {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.box .login_box .login p {
+  margin: 15px;
+  position: relative;
+}
+
+.box .login_box .login p input {
+  width: 260px;
+  height: 35px;
+  margin: 8px 0px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  background: rgba(243, 238, 238, 0.6);
+}
+
+.box .login_box .login p input:hover {
+  box-shadow: 0px 0px 5px 0px blue;
+}
+
+.box .login_box .login p input[type='submit'] {
+  width: 50px;
+  height: 28px;
+  margin-right: 20px;
+  border-radius: 10px;
+  color: #e9e63c;
+  cursor: pointer;
+  background: rgba(67, 138, 179, 0.6);
+}
+
+.box .login_box .login p a {
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+  line-height: 29px;
+  border-radius: 10px;
+  color: #e9e63c;
+  border: none;
+  text-align: center;
+  background: rgba(67, 138, 179, 0.6);
+  cursor: pointer;
+}
+
+.box .login_box .login p a:hover {
+  box-shadow: 0px 0px 5px 0px blue;
+}
+
+label {
+  position: absolute;
+  left: 120px;
+  bottom: -15px;
+  color: #e03f0d;
+}
